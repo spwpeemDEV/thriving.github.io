@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thriving Technology</title>
+    <link rel="icon" href="img/thrivinglogo.svg" type="image/svg" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: "Noto Sans Thai", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+
+    <header class="bg-gray-50 shadow-md sticky w-full top-0 z-50">
+      <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <!-- Logo -->
+          <div class="flex-shrink-0">
+            <a href="index.html">
+              <img src="./img/logo.png" alt="Logo" class="w-12" />
+            </a>
+          </div>
+
+          <!-- Hamburger Menu Button -->
+          <div class="sm:hidden flex items-center">
+            <button
+              id="menu-toggle"
+              class="p-2 rounded-md text-gray-500 hover:text-gray-800 hover:bg-gray-100 focus:outline-none"
+            >
+              <svg
+                class="block h-6 w-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+              <svg
+                class="hidden h-6 w-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <!-- Desktop Menu -->
+          <div class="hidden sm:flex space-x-8">
+            <a
+              href="index.html"
+              class="text-[#375ca2] hover:text-gray-400 transition font-medium duration-200"
+              >หน้าแรก</a
+            >
+            <a
+              href="about.html"
+              class="text-[#375ca2] hover:text-gray-400 transition font-medium duration-200"
+              >เกี่ยวกับเรา</a
+            >
+            <a
+              href="#"
+              class="text-[#375ca2] hover:text-gray-400 transition font-medium duration-200"
+              >บริการ</a
+            >
+            <a
+              href="contact.html"
+              class="text-[#375ca2] hover:text-gray-400 transition font-medium duration-200"
+              >ติดต่อเรา</a
+            >
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div
+          id="mobile-menu"
+          class="hidden sm:hidden absolute top-16 left-0 right-0 bg-gray-50 shadow-lg z-50"
+        >
+          <div class="space-y-4 py-4 px-4">
+            <a
+              href="index.html"
+              class="block text-[#375ca2] hover:text-gray-400 transition font-medium duration-200"
+              >หน้าแรก</a
+            >
+            <a
+              href="about.html"
+              class="block text-[#375ca2] hover:text-gray-400 transition font-medium duration-200"
+              >เกี่ยวกับเรา</a
+            >
+            <a
+              href="#"
+              class="block text-[#375ca2] hover:text-gray-400 transition font-medium duration-200"
+              >บริการ</a
+            >
+            <a
+              href="contact.html"
+              class="block text-[#375ca2] hover:text-gray-400 transition font-medium duration-200"
+              >ติดต่อเรา</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="bg relative h-[300px] flex items-center justify-center">
+      <div class="overlay"></div>
+      <div class="text-center relative z-10">
+        <p
+          class="text-5xl font-bold text-white mb-4 tracking-wide animate-slide-down"
+        >
+          Contact
+        </p>
+      </div>
+    </div>
+    <!-- Hero section -->
+
+    <section class="py-16 px-4 bg-gradient-to-b from-white to-blue-50">
+      <div class="max-w-3xl mx-auto text-center mb-16">
+        <h2 class="text-4xl font-bold text-[#375ca2] mb-6">
+          <span class="text-[#375ca2]">ร่วมงานกับเรา Thriving Technology</span>
+        </h2>
+        <div class="w-20 h-1 bg-[#375ca2] mx-auto mb-6 rounded-full"></div>
+        <p class="text-lg text-gray-600 font-light leading-relaxed">
+          หากคุณสนใจที่จะร่วมงานหรือสนใจในบริการของเรา ทีมงาน Thriving
+          Technology ยินดีที่จะให้คำปรึกษาและแนะนำโซลูชันที่เหมาะสม
+          กรุณาติดต่อเราผ่านทางเว็บไซต์ หรือช่องทางการติดต่ออื่นๆ
+          เราพร้อมที่จะเป็นส่วนหนึ่งในการเดินหน้าสู่อนาคตที่เต็มไปด้วยโอกาสของคุณ
+        </p>
+      </div>
+      <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-start">
+        <!-- Contact Information -->
+        <div class="bg-gray-50 p-8 rounded-xl shadow-lg">
+          <h2 class="text-2xl font-bold text-[#375ca2] mb-6">ข้อมูลติดต่อ</h2>
+          <div class="space-y-6">
+            <div class="flex items-start space-x-4">
+              <svg
+                class="w-6 h-6 text-[#375ca2] mt-1"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <div>
+                <h3 class="font-semibold text-[#375ca2]">ที่อยู่</h3>
+                <p
+                  class="mt-1 text-lg text-gray-600 font-light leading-relaxed"
+                >
+                  51/1 หมู่ที่ 9 ต.ทุ่งสะโตก อ.สันป่าตอง จ.เชียงใหม่
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start space-x-4">
+              <svg
+                class="w-6 h-6 text-[#375ca2] mt-1"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
+                />
+              </svg>
+              <div>
+                <h3 class="font-semibold text-[#375ca2]">โทรศัพท์</h3>
+                <p
+                  class="mt-1 text-lg text-gray-600 font-light leading-relaxed"
+                >
+                  080-804-1318
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start space-x-4">
+              <svg
+                class="w-6 h-6 text-[#375ca2] mt-1"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+                />
+                <path
+                  d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+                />
+              </svg>
+              <div>
+                <h3 class="font-semibold text-[#375ca2]">อีเมล</h3>
+                <p
+                  class="mt-1 text-lg text-gray-600 font-light leading-relaxed"
+                >
+                  Thriving-space@thriving-technology.com
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start space-x-4">
+              <svg
+                class="w-6 h-6 text-[#375ca2] mt-1"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm3 1h6v4H7V5zm8 8v2h1v-2h-1zm-2-6H7v4h6V7zm2 0h1v4h-1V7zm1 6h-1v2h1v-2zm-7 0H7v2h6v-2z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <div>
+                <h3 class="font-semibold text-[#375ca2]">
+                  เลขประจำตัวผู้เสียภาษี
+                </h3>
+                <p
+                  class="mt-1 text-lg text-gray-600 font-light leading-relaxed"
+                >
+                  0505567026141
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Google Map -->
+        <div class="h-[400px] rounded-xl overflow-hidden shadow-lg">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.2!2d98.9!3d18.6!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTjCsDM2JzAwLjAiTiA5OMKwNTQnMDAuMCJF!5e0!3m2!1sen!2sth!4v1234567890!5m2!1sen!2sth"
+            width="100%"
+            height="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="bg-gray-50 py-5">
+      <div class="container mx-auto px-4">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-6 sm:gap-4"
+        >
+          <!-- Logo & Description -->
+          <div class="mb-6 sm:mb-0 text-center sm:text-left">
+            <img
+              src="./img/thrivinglogo.svg"
+              class="w-1/4 sm:w-2/4 mx-auto sm:mx-0 mb-4"
+            />
+            <p class="text-[#375ca2] text-sm">
+              เราพร้อมที่จะเป็นพันธมิตรที่จะช่วยให้ธุรกิจของคุณเติบโตและเจริญรุ่งเรืองไปพร้อมกับการเปลี่ยนแปลงของโลกเทคโนโลยี
+            </p>
+          </div>
+
+          <!-- Address -->
+          <div class="mb-6 sm:mb-0 col-span-1 sm:col-span-2">
+            <p
+              class="text-[#375ca2] text-xl font-semibold mb-2 text-center sm:text-left"
+            >
+              Address
+            </p>
+            <p class="text-[#375ca2] text-sm">
+              51/1 หมู่ที่ 9 ต.ทุ่งสะโตก อ.สันป่าตอง จ.เชียงใหม่
+            </p>
+            <div class="text-[#375ca2] text-sm leading-loose">
+              <div class="flex items-center mb-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="w-5 h-5 mr-2"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <p>Phone : 080-804-1318</p>
+              </div>
+              <div class="flex items-center mb-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="w-5 h-5 mr-2"
+                >
+                  <path
+                    d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z"
+                  />
+                  <path
+                    d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z"
+                  />
+                </svg>
+                <p>Email : Thriving-space@thriving-technology.com</p>
+              </div>
+              <div class="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="w-5 h-5 mr-2"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M6.75 2.25A.75.75 0 0 1 7.5 3v1.5h9V3A.75.75 0 0 1 18 3v1.5h.75a3 3 0 0 1 3 3v11.25a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V7.5a3 3 0 0 1 3-3H6V3a.75.75 0 0 1 .75-.75Zm13.5 9a1.5 1.5 0 0 0-1.5-1.5H5.25a1.5 1.5 0 0 0-1.5 1.5v7.5a1.5 1.5 0 0 0 1.5 1.5h13.5a1.5 1.5 0 0 0 1.5-1.5v-7.5Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <p>Tax ID : 0505567026141</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Navigation Links -->
+          <div
+            class="col-span-1 sm:col-span-3 lg:col-span-2 flex flex-col justify-around"
+          >
+            <div
+              class="text-base font-semibold justify-around sm:justify-around flex flex-wrap text-center sm:text-left"
+            >
+              <a
+                href="index.html"
+                class="text-[#375ca2] hover:text-gray-400 transition font-medium duration-200"
+                >หน้าแรก</a
+              >
+              <a
+                href="about.html"
+                class="text-[#375ca2] hover:text-gray-400 transition font-medium duration-200"
+                >เกี่ยวกับเรา</a
+              >
+              <a
+                href="#"
+                class="text-[#375ca2] hover:text-gray-400 transition font-medium duration-200"
+                >บริการ</a
+              >
+
+              <a
+                href="contact.html"
+                class="text-[#375ca2] hover:text-gray-400 transition font-medium duration-200"
+                >ติดต่อเรา</a
+              >
+            </div>
+            <div class="mt-auto text-center pt-5">
+              <p class="text-[#375ca2] text-sm">
+                Copyright © Thriving Technology Co., Ltd
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ========== END FOOTER ========== -->
+
+    <script>
+      // Toggle Mobile Menu
+      const menuToggle = document.getElementById("menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+      menuToggle.addEventListener("click", () => {
+        const svgIcons = menuToggle.querySelectorAll("svg");
+        svgIcons.forEach((icon) => icon.classList.toggle("hidden"));
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
+
+<style>
+  .bg {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23145da0' fill-opacity='1' d='M0,288L60,256C120,224,240,160,360,154.7C480,149,600,203,720,234.7C840,267,960,277,1080,282.7C1200,288,1320,288,1380,288L1440,288L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z'%3E%3C/path%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+
+  .animate-slide-down {
+    animation: slideDown 1s ease-out forwards;
+    opacity: 0;
+  }
+
+  @keyframes slideDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-80px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
